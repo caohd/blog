@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>消息</title>
+    <link rel="stylesheet" type="text/css" href="public/styles/indexBasis.css">
+    <link rel="stylesheet" type="text/css" href="public/styles/homePageBasis.css">
+    <link rel="stylesheet" type="text/css" href="public/styles/message.css">
+</head>
+<body>
+<div class="main_wrapper">
+
+    <!--页头-->
+    <header class="head">
+        <div class="Top">
+            <nav>
+                <div class="logo">
+                    <a href="#"><img src="public/images2/LOGO.png"/></a>
+                </div>
+                <div class="top_nav">
+                    <ul>
+                        <li><a href="index.html">首页</a></li>
+                        <li><a href="world.html">世界</a></li>
+                        <li><a href="#" class="thisPage">消息</a></li>
+                    </ul>
+                </div>
+                <div class="search_bar">
+                    <form method="GET" action="search.html">
+                        <input type="text" placeholder="搜索从这里开始..." class="search_box" name="search" id="search_box">
+                        <input type="submit" class="search_sub" id="search_sub" value=" ">
+                    </form>
+                </div>
+                <!--用户-->
+                <div class="user">
+                    <ul>
+                        <li><img src="public/images2/logo.png"/></li>
+                        <li><span><a href="home.html">吴亦凡</a></span></li>
+                    </ul>
+                </div>
+                <!--设置-->
+                <div class="setting">
+                    <img src="public/images2/set01.png"/>
+                </div>
+                <div class="setting_select">
+                    <ul>
+                        <li><a class="draftBox">草稿箱</a></li>
+                        <li><a href="changeinfo.html">资料设置</a></li>
+                        <li><a href="#">退出登录</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="draftContent">
+            <div class="draft_title">草稿箱</div>
+            <div class="draftClose" title="关闭草稿箱"><img src="public/images2/del.png"/></div>
+            <section>
+                <div class="draft_time">2017-12-11</div>
+                <div class="draft_blog">
+                    <div class="blog_title">
+                        哈哈哈哈哈哈哈哈哈哈哈哈哈哈
+                    </div>
+                    <div class="blog_list">
+                        <ul>
+                            <li><a href="#" title="发送"><img src="public/images2/send.png"/></a></li>
+                            <li><a href="#" title="继续编辑"><img src="public/images2/M.png"/></a></li>
+                            <li><a href="#" title="删除"><img src="public/images2/trash.png"/></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="draft_time">2017-12-10</div>
+                <div class="draft_blog">
+                    <div class="blog_title">
+                        哈哈哈哈哈哈哈哈哈哈哈哈哈哈
+                    </div>
+                    <div class="blog_list">
+                        <ul>
+                            <li><a href="#" title="发送"><img src="public/images2/send.png"/></a></li>
+                            <li><a href="#" title="继续编辑"><img src="public/images2/M.png"/></a></li>
+                            <li><a href="#" title="删除"><img src="public/images2/trash.png"/></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="draft_blog">
+                    <div class="blog_title">
+                        哈哈哈哈哈哈哈哈哈哈哈哈哈哈
+                    </div>
+                    <div class="blog_list">
+                        <ul>
+                            <li><a href="#" title="发送"><img src="public/images2/send.png"/></a></li>
+                            <li><a href="#" title="继续编辑"><img src="public/images2/M.png"/></a></li>
+                            <li><a href="#" title="删除"><img src="public/images2/trash.png"/></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </header>
+
+    <!--内容-->
+    <div class="content">
+        <!--消息类别-->
+        <div class="message_list">
+            <ul>
+                <li><a href="#" title="查看评论" class="Comment">评论</a></li>
+                <li><a href="#" title="查看私信" class="privateMessage">私信</a></li>
+                <li><a href="#" title="其他" class="Others">其他</a></li>
+            </ul>
+        </div>
+        <div class="moments">
+            <!--评论-->
+            <div class="commentContent">
+                <section>
+                    <!--某一天收到的评论-->
+                    <div class="time">2017-12-18</div>
+                    <section class="viewBlog">
+                        <!--评论人头像-->
+                        <div class="comment_pic">
+                            <img src="public/images/myphoto.jpg"/>
+                        </div>
+                        <!--评论人昵称-->
+                        <div class="comment_name">
+                            <span>王俊凯</span>
+                        </div>
+                        <div class="comment_bg">
+                            <!--评论发出时间-->
+                            <div class="comment_time">
+                                <span>2017-12-18 16:20</span>
+                            </div>
+                            <!--评论相关内容-->
+                            <div class="comment_title" onclick="viewBlog()">
+                                评论 <span>《蓝狗与欧姆》</span>
+                            </div>
+                            <!--评论的内容-->
+                            <div class="comment_word">
+                                Lorem ipsum dolor sit amet, Assumenda atque est illo vitae voluptatem?
+                                Lorem ipsum dolor sit amet, Assumenda atque est illo vitae voluptatem?
+                            </div>
+                            <div class="comment_list">
+                                <ul>
+                                    <li><a onclick="showReplyComment(this)" href="#" title="回复评论"><img
+                                            src="public/images3/M.png"/></a></li>
+                                    <li><a onclick="delSection(1)" href="#" title="删除评论"><img
+                                            src="public/images3/I.png"/></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+            </div>
+            <!--私信-->
+            <div class="priMesContent">
+                <section>
+                    <section>
+                        <!--发私信人头像-->
+                        <div class="comment_pic">
+                            <img src="public/images/myphoto.jpg"/>
+                        </div>
+                        <!--发私信人昵称-->
+                        <div class="comment_name">
+                            <span>李易峰</span>
+                        </div>
+                        <div class="comment_bg">
+                            <!--发私信时间-->
+                            <div class="comment_time">
+                                <span>2017-12-18 16:20</span>
+                            </div>
+                            <!--未读信息数量，阅读后消失-->
+                            <div class="comment_number">3</div>
+                            <!--私信内容-->
+                            <div class="comment_word">
+                                这是李易峰发给你的私信，这是李易峰发给你的私信，这是李易峰发给你的私信
+                            </div>
+                            <div class="comment_list">
+                                <ul>
+                                    <!--回复-->
+                                    <li><a href="#" title="回复私信" onclick="showChatBox()"><img
+                                            src="public/images3/M.png"/></a></li>
+                                    <!--删除 -->
+                                    <li><a onclick="delSection(101)" href="#" title="删除私信"><img
+                                            src="public/images3/I.png"/></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+            </div>
+            <!--其他（点赞、转发）-->
+            <div class="othersContent">
+                <section>
+                    <!--某一天收到的点赞-->
+                    <div class="time">2017-12-18</div>
+                    <section>
+                        <!--点赞人头像-->
+                        <div class="comment_pic">
+                            <img src="public/images/myphoto.jpg"/>
+                        </div>
+                        <!--点赞人昵称-->
+                        <div class="comment_name">
+                            <span>鹿晗</span>
+                        </div>
+                        <div class="comment_bg">
+                            <!--点赞时间-->
+                            <div class="comment_time">
+                                <span>2017-12-18 16:20</span>
+                            </div>
+                            <!--点赞相关内容-->
+                            <div class="comment_word">
+                                <span>点赞</span>了你的<span>图片</span>：
+                                <span>和欧姆的每一天</span>
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <div class="comment_pic">
+                            <img src="public/images/myphoto.jpg"/>
+                        </div>
+                        <div class="comment_name">
+                            <span>胡歌</span>
+                        </div>
+                        <div class="comment_bg">
+                            <div class="comment_time">
+                                <span>2017-12-18 16:20</span>
+                            </div>
+                            <div class="comment_word">
+                                <span>转发</span>了你的<span>博文</span>：<span>和蓝狗的每一天</span>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <!--查看原文弹出框-->
+    <div class="passage_dialog">
+        <!--关闭按钮-->
+        <div class="passage_Close"></div>
+        <!--博客内容-->
+        <div class="content">
+            <div class="moments">
+                <section id="section">
+                    <div class="fri_pic"><img src="public/images/pic01.jpg" alt=""></div>
+                    <div class="fri_main">
+                        <div class="fri_name"><a href="home.html">吴亦凡</a></div>
+                        <div class="fri_concern"><a id="concern1" href="#" title="点击关注好友" onclick="Concern(1)">+关注</a>
+                        </div>
+                        <div class="fri_time">2017-12-7 18:00</div>
+                        <div class="fri_read">阅读量 | <span>2222</span></div>
+                        <div class="fri_content" id="fri_content1">
+                            <span>震惊！居然还有这样的操作……</span>
+                            <article>
+                                你的感情可能正在感冒，你的生活可能一团糟，你的世界可能只差一个最好的人……可不去经历，如何成长？不去受伤，如何坚强？不去相信，如何相遇？
+                                12个温馨治愈的情感故事，给年轻人爱的正能量和信心，让你在面对爱时无惧，怀疑爱时坚定。
+                                这些故事也许你生活中永远不会碰触，亦或许曾经经历、正在经历并且将会经历，张皓宸以电影化的手法，将故事中的人物带到你身边，你将与他们共同欢笑，共同哭泣，经历12段美妙人生。
+                                这本书就像酒店门口的伞，遇见下雨天，告诉你别淋着，它也像一个残忍的耳光，让你沾沾自喜快忘了自己模样时狠心提醒，它还像你淹没在孤独人群里的一声叫喊，你一定会回过头。嗯，有人正在找你。
+                                12个故事，各式各样的男女，在你某个临睡的深夜或是赶路的地铁公车里看看，任你选择，跟其中几个人认识，感受他们的爱恨，或欢喜或悲哀，或疯狂或遗憾。在你落单时、暗恋时、失恋时、试图放弃时能成为一个隔空的拥抱，给你些许无声的安慰。
+                                希望你慢点读它，可以听着歌，吃着爆米花……
+                                希望你也能把它放在枕边，相信爱的吸引力，一定会得到最好的幸福……
+                                希望这本书能给你忙碌的生活中带去一点甜头，对爱情还抱有几多向往和期待，那终究也对得起这份相遇……
+                                你的感情可能正在感冒，你的生活可能一团糟，你的世界可能只差一个最好的人……可不去经历，如何成长？不去受伤，如何坚强？不去相信，如何相遇？
+                                12个温馨治愈的情感故事，给年轻人爱的正能量和信心，让你在面对爱时无惧，怀疑爱时坚定。
+                                这些故事也许你生活中永远不会碰触，亦或许曾经经历、正在经历并且将会经历，张皓宸以电影化的手法，将故事中的人物带到你身边，你将与他们共同欢笑，共同哭泣，经历12段美妙人生。
+                                这本书就像酒店门口的伞，遇见下雨天，告诉你别淋着，它也像一个残忍的耳光，让你沾沾自喜快忘了自己模样时狠心提醒，它还像你淹没在孤独人群里的一声叫喊，你一定会回过头。嗯，有人正在找你。
+                                12个故事，各式各样的男女，在你某个临睡的深夜或是赶路的地铁公车里看看，任你选择，跟其中几个人认识，感受他们的爱恨，或欢喜或悲哀，或疯狂或遗憾。在你落单时、暗恋时、失恋时、试图放弃时能成为一个隔空的拥抱，给你些许无声的安慰。
+                                希望你慢点读它，可以听着歌，吃着爆米花……
+                                希望你也能把它放在枕边，相信爱的吸引力，一定会得到最好的幸福……
+                            </article>
+                            <div class="fri_list">
+                                <ul>
+                                    <li>
+                                        <a onclick="iLike(1)" title="点赞" id="like1" class="like">
+                                            <img src="public/images3/E.png"/>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a onclick="showComment(1)" title="评论" id="comment1" class="comment">
+                                            <img src="public/images2/beforecomment.png">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a onclick="rePostTip(1),rePost(1)" id="rePost1" title="转载" class="rePost">
+                                            <img src="public/images2/before.png"/>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a onclick="deleteTip(1),delSection(1)" id="delete1">
+                                            <img src="public/images2/trash.png"/>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!--展开全文-->
+                        <!--<div class="fri_contentAll" id="fri_contentAll1"><a onclick="showPassage(1)" title="展开全文"><img src="public/images2/full.png"/></a>
+                        </div>
+                        <div class="fri_contentAllHide" id="fri_contentAllHide1"><a onclick="hidePassage(1)" title="收起全文">
+                            <img src="public/images2/unfull.png"/></a>
+                        </div>-->
+                        <!--评论框-->
+                        <div class="fri_comment" id="fri_comment1">
+                            <!--列表-->
+                            <div class="fri_List">
+                                <ul>
+                                    <li><a title="点赞数" class="like"><img src="public/images2/beforelike.png"/>
+                                        <span>123</span></a></li>
+                                    <li><a title="评论数" class="comment" onclick="closeComment(1)"><img
+                                            src="public/images2/c.png"> <span>456</span></a></li>
+                                    <li><a title="转载数" class="rePost"><img src="public/images2/before.png"/>
+                                        <span>789</span></a></li>
+                                </ul>
+                            </div>
+                            <!--评论输入框-->
+                            <div class="sendComment" id="sendComment1">
+                                <form method="post" action="">
+                                    <textarea name="" id="" placeholder="请输入你的评论……" class="inputComment"></textarea>
+                                    <input type="submit" value=" " class="submitComment">
+                                </form>
+                            </div>
+                            <!--评论列表-->
+                            <div class="commentList" id="commentList1">
+                                <section>
+                                    <div class="comment_time">
+                                        <span>2017-12-10 16:20</span>
+                                    </div>
+                                    <div class="comment_pic">
+                                        <img src="public/images/myphoto.jpg" height="640" width="640"/></div>
+                                    <div class="comment_name">
+                                        <span>王俊凯</span>
+                                    </div>
+                                    <div class="comment_word">
+                                        Lorem ipsum dolor sit amet, Assumenda atque est illo vitae voluptatem?
+                                    </div>
+                                    <div class="comment_btn">
+                                        <a onclick="showReplyComment(2)" title="回复评论">回复</a>
+                                    </div>
+
+                                    <div class="comment_list">
+                                        <ul>
+                                            <li><a onclick="delComment(1)" title="删除评论">
+                                                <img src="public/images2/trash.png"/>
+                                            </a></li>
+                                            <li><a onclick="iLike()" title="点赞" class="like">
+                                                <img src="public/images2/beforelike.png"/><span>(123)</span></a></li>
+                                            <li><a onclick=" " title="评论" id="showComment1" class="comment"><img
+                                                    src="public/images2/c.png"><span>(123)</span></a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="comment_reply">
+                                        <section>
+                                            <div class="reply_time">
+                                                <span>2017-12-10 16:20</span>
+                                            </div>
+                                            <div class="reply_name">
+                                                <span>王源</span>
+                                            </div>
+                                            <div class="reply_word">
+                                                Lorem ipsum dolor sit amet, Assumenda atque est illo vitae voluptatem?
+                                            </div>
+                                            <div class="reply_btn">
+                                                <a href=" " onclick="replyComment()" title="回复评论">回复</a>
+                                            </div>
+                                        </section>
+                                        <section>
+                                            <div class="reply_time">
+                                                <span>2017-12-10 16:20</span>
+                                            </div>
+                                            <div class="reply_name">
+                                                <span>胡歌</span>
+                                            </div>
+                                            <div class="reply_word">
+                                                Lorem ipsum dolor sit amet, Assumenda atque est illo vitae voluptatem?
+                                            </div>
+                                            <div class="reply_btn">
+                                                <a href=" " onclick="replyComment()" title="回复评论">回复</a>
+                                            </div>
+                                        </section>
+                                        <section>
+                                            <div class="reply_time">
+                                                <span>2017-12-10 16:20</span>
+                                            </div>
+                                            <div class="reply_name">
+                                                <span>胡一天</span>
+                                            </div>
+                                            <div class="reply_word">
+                                                Lorem ipsum dolor sit amet, Assumenda atque est illo vitae voluptatem?
+                                            </div>
+                                            <div class="reply_btn">
+                                                <a href=" " onclick="replyComment()" title="回复评论">回复</a>
+                                            </div>
+                                        </section>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <!--聊天对话框-->
+    <div class="chatBox">
+        <div class="friID">李易峰</div>
+        <div class="delChat">删除记录</div>
+        <div class="closeChat" title="关闭对话框"><img src="public/images2/answer-del.png"/></div>
+        <!--背景-->
+        <div class="bg"></div>
+        <div class="chatList">
+            <!--回复时间-->
+            <div class="chatTime">2017-12-19 10:51</div>
+            <!--好友-->
+            <section class="friend">
+                <div class="pic"><img src="public/images2/CC.png"/></div>
+                <div class="word">交个朋友吧！交个朋友吧！交个朋友吧！交个朋友吧！交个朋友吧！</div>
+            </section>
+            <!--本人-->
+            <section class="me">
+                <div class="word">你有绿箭吗？你有绿箭吗？你有绿箭吗？你有绿箭吗？你有绿箭吗？你有绿箭吗？你有绿箭吗？</div>
+                <div class="pic"><img src="public/images/myphoto.jpg"/></div>
+            </section>
+            <div class="chatTime">2017-12-19 11:51</div>
+            <section class="friend">
+                <div class="pic"><img src="public/images2/CC.png"/></div>
+                <div class="word">交个朋友吧！交个朋友吧！交个朋友吧！交个朋友吧！交个朋友吧！
+                    交个朋友吧！交个朋友吧！交个朋友吧！交个朋友吧！交个朋友吧！交个朋友吧！交个朋友吧！交个朋友吧！交个朋友吧！交个朋友吧！
+                    交个朋友吧！交个朋友吧！交个朋友吧！交个朋友吧！交个朋友吧！
+                </div>
+            </section>
+            <section class="me">
+                <div class="word">你有绿箭吗？你有绿箭吗？你有绿箭吗？你有绿箭吗？你有绿箭吗？你有绿箭吗？你有绿箭吗？</div>
+                <div class="pic"><img src="public/images/myphoto.jpg"/></div>
+            </section>
+        </div>
+        <div class="inputBox">
+            <form action="" method="post">
+                <textarea name="content" id="chatContent" class="inputWord"></textarea>
+                <input type="button" name="submit" id="sendChatButton" value="" class="sendWord">
+            </form>
+        </div>
+    </div>
+
+    <!--删除提示弹出框-->
+    <div class="delete_dialog" id="delete_dialog">
+        已删除!
+    </div>
+    <!--删除提示弹出框-->
+    <div class="tip_dialog" id="tip">
+
+    </div>
+    <!--回复评论弹出框1-->
+    <div class="inputReply">
+        <form method="post" action="">
+            <textarea name="content" id="ccomment" cols="30" rows="10" placeholder="请输入你的回复……"
+                      class="inputReplyComment"></textarea>
+            <input type="button" value="" onclick="ccComment()" class="submitReplyComment">
+        </form>
+        <div class="closeReplyComment" onclick="hideReplyComment()">
+            <img src="public/images2/answer-del.png"/>
+        </div>
+    </div>
+
+    <!--固定底部头像-->
+    <div class="fix_foot">
+        <div class="myPhoto"><a href="home.html"><img src="public/images/myphoto.jpg"/></a></div>
+        <div class="back"><img src="public/images2/a.png"/></div>
+    </div>
+    <!--页脚-->
+    <footer>
+        <ul class="share_group">
+            <li><a href="#">关于FODIA</a></li>
+            <li><a href="#">手机玩FODIA</a></li>
+            <li><a href="#">认证&合作</a></li>
+            <li><a href="#">联系我们</a></li>
+        </ul>
+        <div class="copy">
+            &copy FODIA- 2017 | Power By Fodia
+        </div>
+    </footer>
+    <!--返回顶部按钮-->
+    <button class="backTop"></button>
+    <!--遮罩-->
+    <div class="mask"></div>
+
+
+</div>
+</body>
+<script type="text/javascript" src="public/js/jquery.js"></script>
+<script type="text/javascript" src="public/js/functions.js"></script>
+<script type="text/javascript" src="public/js/WS.js"></script>
+<script type="text/javascript" src="public/js/main.js"></script>
+<script type="text/javascript" src="public/js/message.js"></script>
+</html>

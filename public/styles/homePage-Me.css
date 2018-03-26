@@ -1,0 +1,125 @@
+.content  .moments .infBox{
+    width: 100%;
+    height: 650px;
+    background:rgba(255,255,255,0.8);
+    position: relative;
+}
+.content  .moments .infEditBox{
+    width: 100%;
+    height: 880px;
+    background:rgba(255,255,255,0.8);
+    position: relative;
+}
+.content  .moments .infBox .myPic,.infEditBox .photo{
+    width: 20%;
+    height: auto;
+    position: absolute;
+    left: 40%;
+    margin-top: 30px;
+}
+.content  .moments .infBox .myPic img,
+.infEditBox .photo img{
+    /*width: 100%;*/
+    width:180px;
+    height: 180px;
+    border-radius: 90px;
+}
+.content  .moments .infBox .write_info{
+    width: 5%;
+    height: auto;
+    position: absolute;
+    right:5%;
+    margin-top: 30px;
+}
+.content .moments .infBox .write_info img{
+    width: 100%;
+}
+.content .moments .infBox .infoList,
+.infEditBox form{
+    position: absolute;
+    top: 220px;
+    width: 60%;
+    left: 20%;
+}
+.content .moments .infBox .infoList p,
+.infEditBox form p{
+    display: block;
+    width: 100%;
+    height: 30px;
+    font-size: 22px;
+    color: #4d5f77;
+    margin-bottom: 20px;
+}
+.infEditBox form .password{
+    display: none;
+}
+.infEditBox form .nickname input,
+.infEditBox form .password input,
+.infEditBox form .email input{
+    width: 200px;
+    height: 25px;
+    line-height: 25px;
+    background: transparent;
+    color: #4d5f77;
+    border: solid 2px #4d5f77;
+    font-size: 18px;
+}
+.infEditBox form .introduce textarea{
+    width: 200px;
+    height: 100px;
+    line-height: 25px;
+    background: transparent;
+    color: #4d5f77;
+    border: solid 2px #4d5f77;
+    font-size: 18px;
+}
+.infEditBox .location select,
+.infEditBox .birth select{
+    width: 70px;
+    height: 25px;
+    line-height: 25px;
+    color: white;
+    background: #4d5f77;
+    border: none;
+    font-size: 16px;
+}
+.infEditBox form .changePassword{
+    position: absolute;
+    height: 20px;
+    top: 60px;
+    right: 100px;
+
+}
+.infEditBox form .changePassword{
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    color: #4d5f77;
+}
+/*确认*/
+.infEditBox form .send{
+    position: absolute;
+    width: 30%;
+    height: 40px;
+    bottom: -140px;
+    right: 35%;
+    color: white;
+    background: #4d5f77;
+    border-radius: 10px;
+    border: none;
+    font-size: 18px;
+    font-weight: 600;
+}
+/*关闭编辑*/
+.infEditBox .closeEdit{
+    position: absolute;
+    top: 20px;
+    right: 30px;
+}
+/*邮箱输入错误*/
+.infEditBox form .mistakes{
+    color: red;
+    font-size: 16px;
+    font-weight: 600;
+    /*display: none;*/
+}

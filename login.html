@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="public/styles/reset.css">
+    <link rel="stylesheet" type="text/css" href="public/styles/login.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="inner">
+            <!--<h1>FODIA</h1>-->
+            <img src="public/images/LOGO2.png" alt="">
+            <p class="sub_head">今日  值得铭记</p>
+        </div>
+        <div class="main-wrapper">
+            <div class="choose">
+                <ul>
+                    <li class="chosen_login"><a href="#">登录</a></li>
+                    <li class="chosen_register"><a href="#">注册</a></li>
+                </ul>
+            </div>
+            <div class="content">
+                <section>
+                    <!--登录部分-->
+                    <div class="login">
+                        <form class="login" action="https://www.baidu.com/" method="post">
+                            <!-- 用户名 -->
+                            <input type="text" class="text"   id='user' onblur="lUserExist()" name="username" placeholder="用户名 / 邮箱">
+                            <!-- 密码 -->
+                            <input type="password" class="text" id='pwd'  name="password" onfocus="clearMs()" placeholder="密码">
+                            <a href="#" id="forget_password" class="forget_password">忘记密码？</a>
+                            <!--显示错误信息-->
+                            <div class="mistake"></div>
+                            <!-- 登录按钮 -->
+                            <input type="button" onclick="login(this)" class="buttonLogin" id='login_button'  value="登录">
+                        </form>
+                    </div>
+                </section>
+                <section>
+                    <!--注册部分-->
+                    <div class="register">
+                        <form class="register" action="" method="post">
+                            <!-- 用户名 -->
+                            <input class="text" id='author' type="text" name="username" onblur="rUserExist()" placeholder="用户名">
+                            <!-- 昵称 -->
+                            <input class="text" id='nickname' type="text" name="nickname" placeholder="昵称">
+                            <!-- 密码 -->
+                            <input class="text" id='password' type="password" name="password" placeholder="密码">
+                            <!--显示错误信息-->
+                            <div class="mistake"></div>
+                            <!-- 注册按钮 -->
+                            <input type="button" onclick="register()" class="buttonRegister" id='register_button'  value="注册">
+                        </form>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <!--忘记密码弹出框-->
+        <div class="forgetPassword">
+            <p>请输入绑定的邮箱</p>
+            <form action="" method="post">
+                <!--输入邮箱-->
+                <input type="text" name="mail" class="inputEmail">
+                <!--确定-->
+                <input type="button" name="submit" class="submitEmail" value=" ">
+            </form>
+            <!--关闭-->
+            <a href="" class="close"><img src="public/images2/answer-del.png"/></a>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="public/js/jquery.js"></script>
+<script type="text/javascript" src="public/js/functions.js"></script>
+<script type="text/javascript" src="public/js/login.js"></script>
+</html>

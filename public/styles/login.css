@@ -1,0 +1,230 @@
+body{
+    width: 100% ;
+    background: url("../images/pic03.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.inner{
+    width: 28%;
+    height: 230px;
+    margin-top: 80px;
+    margin-left:auto;
+    margin-right:auto;
+    text-align: center;
+
+}
+.inner img{
+    width:100%;
+    margin: 0;
+    color: #ffffff;
+    letter-spacing: 0.1em;
+    text-align: center;
+}
+.inner .sub_head{
+    padding-top: 30px;
+    font-family: 幼圆;
+    font-size: 35px;
+    color: #ffffff;
+    text-align: center;
+}
+.main-wrapper{
+    width: 30%;
+    /*height: 300px;*/
+    background: rgba(234,239,243,0.7);
+    margin-top: 30px;
+    margin-left:auto;
+    margin-right:auto;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    min-height: 200px;
+}
+
+.main-wrapper .choose,
+.main-wrapper.resetPassword{
+    width: 100%;
+    height: 38px;
+    line-height: 38px;
+
+}
+.main-wrapper .resetPassword {
+    width: 100%;
+    text-align: center;
+    font-size: 24px;
+    display: inline-block;
+    font-weight: 600;
+    font-family: 幼圆;
+    padding-top: 20px;
+}
+.main-wrapper .choose ul{
+    width: 100%;
+    height: 100%;
+}
+.main-wrapper .choose li{
+    float: left;
+    text-align: center;
+    width: 50%;
+    display: inline-block;
+}
+.main-wrapper .choose li a{
+    /*color:#666666;*/
+    width: 100%;
+    font-size: 24px;
+    display: inline-block;
+    font-weight: 600;
+    font-family: 幼圆;
+}
+.main-wrapper .choose .chosen_register{
+    background: rgba(234,239,243,0.7);
+    border-radius: 0 10px 0 0;
+    -moz-border-radius: 0 10px 0 0;
+    -webkit-border-radius: 0 10px 0 0;
+
+}
+.main-wrapper .choose .chosen_register a{
+    color:#ffffff;
+}
+.main-wrapper .choose .chosen_login{
+
+    border-radius: 10px 0 0 0;
+    -moz-border-radius: 10px 0  0 0;
+    -webkit-border-radius: 10px 0 0 0;
+
+}
+.main-wrapper .choose .chosen_login a{
+    color: #000;
+}
+.main-wrapper .content{
+    /*display: block;*/
+    font-size: 30px;
+    text-align: center;
+    padding: 20px;
+}
+
+.main-wrapper .content .text{
+    width: 60%;
+    height: 35px;
+    border:1px solid #999;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    line-height: 30px;
+    font-size: 16px;
+    padding-left: 24px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top: 0;
+    margin-bottom:5px;
+}
+
+.main-wrapper .content .login .buttonLogin,
+.main-wrapper .content .login .submitPassword{
+    width: 40%;
+    height: 40px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    border:1px solid transparent;
+    background:#507097;
+    line-height:35px;
+    font-size: 20px;
+    color: #fff;
+    display:inline-block;
+    margin-left:auto;
+    margin-right:auto;
+    font-family: 幼圆;
+}
+
+.main-wrapper .content .register .buttonRegister{
+    width: 40%;
+    height: 40px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    border:1px solid transparent;
+    background:#507097;
+    line-height:35px;
+    font-size: 20px;
+    color: #fff;
+    display:inline-block;
+    margin-left:auto;
+    margin-right:auto;
+    font-family: 幼圆;
+}
+
+.main-wrapper .mistake{
+    width:70%;
+    height: 40px;
+    margin: 5px 0px;
+    /*background: #ccc;*/
+    margin-left:auto;
+    margin-right:auto;
+    color:red;
+    font-size: 16px;
+    display: none;
+}
+
+.main-wrapper .content .login a,
+.main-wrapper .content .register a
+{
+    display: block;
+    font-family: 幼圆;
+    color: black;
+    font-size: 16px;
+    padding-left: 150px;
+}
+
+/*忘记密码弹框*/
+.forgetPassword{
+    width: 26%;
+    height: 150px;
+    left: 37%;
+    top: 300px;
+    position: fixed;
+    background: #4d5f77;
+    border-radius: 10px;
+    display: none;
+    z-index: 20;
+}
+.forgetPassword p{
+    display: block;
+    font-size: 24px;
+    color: white;
+    font-family: 幼圆;
+    position: absolute;
+    top: 6%;
+    left: 20px;
+}
+.forgetPassword .inputEmail{
+    width: 88%;
+    border: none;
+    height: 40px;
+    border-radius: 10px;
+    position: absolute;
+    top: 45px;
+    left: 6%;
+    font-size: 20px;
+}
+.forgetPassword .submitEmail{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right:6%;
+    bottom: 10px;
+    border: none;
+    background:url("../images3/B.png") no-repeat center center;
+}
+.forgetPassword a{
+    display: block;
+    position: absolute;
+    left: 6%;
+    bottom: 10px;
+    width: 40px;
+    height: 40px;
+}
+.forgetPassword a img{
+    width: 40px;
+    height: 40px;
+}

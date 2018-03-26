@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>我的相册</title>
+    <link rel="stylesheet" type="text/css" href="public/styles/indexBasis.css">
+    <link rel="stylesheet" type="text/css" href="public/styles/homePageBasis.css">
+</head>
+<body>
+<div class="main_wrapper">
+    <!--页头-->
+    <header class="head">
+        <div class="Top">
+            <nav>
+                <div class="logo">
+                    <a href="#"><img src="public/images2/LOGO.png"/></a>
+                </div>
+                <div class="top_nav">
+                    <ul>
+                        <li ><a href="index.html">首页</a></li>
+                        <li ><a href="world.html">世界</a></li>
+                        <li ><a href="message.html">消息</a></li>
+                    </ul>
+                </div>
+                <!--搜索框-->
+                <div class="search_bar">
+                    <form method="GET" action="search.html">
+                        <input type="text" placeholder="搜索从这里开始..." class="search_box" name="search" id="search_box">
+                        <input type="submit" class="search_sub" id="search_sub" value=" ">
+                    </form>
+                </div>
+                <!--用户-->
+                <div class="user">
+                    <ul>
+                        <li><img src="public/images2/logo.png"/></li>
+                        <li><span><a href="homePage-Blog.html">吴亦凡</a></span></li>
+                    </ul>
+                </div>
+                <!--设置-->
+                <div class="setting">
+                    <img src="public/images2/set01.png"/>
+                </div>
+                <div class="setting_select">
+                    <ul>
+                        <li><a class="draftBox">草稿箱</a></li>
+                        <li><a href="changeinfo.html">资料设置</a></li>
+                        <li><a href="#">退出登录</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="draftContent">
+            <div class="draft_title">草稿箱</div>
+            <div class="draftClose" title="关闭草稿箱"><img src="public/images2/del.png"/></div>
+            <section>
+                <div class="draft_time">2017-12-11</div>
+                <div class="draft_blog">
+                    <div class="blog_title">
+                        哈哈哈哈哈哈哈哈哈哈哈哈哈哈
+                    </div>
+                    <div class="blog_list">
+                        <ul>
+                            <li><a href="#" title="发送"><img src="public/images2/send.png"/></a></li>
+                            <li><a href="#" title="继续编辑"><img src="public/images2/M.png" /></a></li>
+                            <li><a href="#" title="删除"><img src="public/images2/trash.png"/></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="draft_time">2017-12-10</div>
+                <div class="draft_blog">
+                    <div class="blog_title">
+                        哈哈哈哈哈哈哈哈哈哈哈哈哈哈
+                    </div>
+                    <div class="blog_list">
+                        <ul>
+                            <li><a href="#" title="发送"><img src="public/images2/send.png"/></a></li>
+                            <li><a href="#" title="继续编辑"><img src="public/images2/M.png" /></a></li>
+                            <li><a href="#" title="删除"><img src="public/images2/trash.png"/></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="draft_blog">
+                    <div class="blog_title">
+                        哈哈哈哈哈哈哈哈哈哈哈哈哈哈
+                    </div>
+                    <div class="blog_list">
+                        <ul>
+                            <li><a href="#" title="发送"><img src="public/images2/send.png"/></a></li>
+                            <li><a href="#" title="继续编辑"><img src="public/images2/M.png" /></a></li>
+                            <li><a href="#" title="删除"><img src="public/images2/trash.png"/></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </header>
+    <!--内容-->
+    <div class="content">
+        <div class="top_banner">
+            <img src="public/images/myphoto.jpg" alt="">
+            <h1>_SUYI-CHAN</h1>
+            <a id="introduce" href="javascript:showIntroduce();">
+                一句话介绍一下自己吧，让别人更了解你
+            </a>
+        </div>
+        <div class="content_bar">
+            <ul>
+                <li><a href="home.html" id="blog">博文</a></li>
+                <li><a class="current">相册</a></li>
+                <li><a href="friend.html" id="friend">博友</a></li>
+                <li><a href="likeme.html" id="likeme">我的赞</a></li>
+                <li><a href="info.html" id="info">关于我</a></li>
+            </ul>
+        </div>
+        <div class="moments">
+            <div class="photoBox">
+                <div class="photoHead">
+                    <!--标题-->
+                    <div class="photoTitle">
+                        相册<span>(2)</span>
+                    </div>
+                    <!--增加相册-->
+                    <div class="photoAdd">
+                        <a title="点击增加相册"> <img src="public/images3/G.png"/>新增相册</a>
+                    </div>
+                    <!--删除相册-->
+                    <div class="photoDelete">
+                        <a title="删除相册"><img src="public/images3/I.png"/></a>
+                    </div>
+                </div>
+                <!--相册列表-->
+                <div class="photoList">
+                   <div class="wrapper">
+                   <!--相册-->
+                   <section class="first" id="section1">
+                       <div class="delList" onclick="delSection(2)">
+                           <img src="public/images3/H.png"/>
+                       </div>
+                       <div class="photoCover">
+                           <a href="pictures.html"><img src="public/images/myphoto.jpg" /></a>
+                       </div>
+                       <div class="photoName">
+                           《欧姆与蓝狗》
+                       </div>
+                   </section>
+                    <!--相册2-->
+                    <section class="second" id="section2">
+                        <div class="delList" onclick="delSection(2)">
+                            <img src="public/images3/H.png"/>
+                        </div>
+                        <div class="photoCover">
+                            <a href="pictures.html"><img src="public/images/myphoto.jpg" /></a>
+                        </div>
+                        <div class="photoName">
+                            《欧姆与蓝狗》
+                        </div>
+                    </section>
+                     <section class="third">
+                           <div class="photoCover">
+                           </div>
+                           <div class="photoName">
+                           </div>
+                     </section>
+                   </div>
+                </div>
+                </div>
+        </div>
+        <!--新增相册-->
+        <div class="addPhotoListBox">
+            <p>相册名字</p>
+            <form action="" method="GET">
+                <input type="text" name="album" id="album" class="nameOfPhoto">
+                <input type="button" name="" onclick="newAlbum()" class="submitName" value=" ">
+            </form>
+            <a href="" class="closeName"><img src="public/images2/answer-del.png"/></a>
+        </div>
+    </div>
+    <!--返回顶部按钮-->
+    <button class="backTop"></button>
+
+    <!--页脚-->
+    <footer>
+        <ul class="share_group">
+            <li><a href="#">关于FODIA</a></li>
+            <li><a href="#">手机玩FODIA</a></li>
+            <li><a href="#">认证&合作</a></li>
+            <li><a href="#">联系我们</a></li>
+        </ul>
+        <div class="copy">
+            &copy FODIA- 2017 | Power By Fodia
+        </div>
+    </footer>
+    <!--转载提示弹出框-->
+    <div class="tip_dialog" id="tip">
+
+    </div>
+    <!--遮罩-->
+    <div class="mask"></div>
+
+    <!--简介弹出框-->
+    <div class="int_mask" id="int_mask" onselectstart="return false"></div>
+    <div class="int_dialog" id="int_dialog">
+        <div class="int_dialogTitle" id="int_dialogTitle">
+            请输入你的简介
+            <a onclick="hideIntroduce()" class="int_dialogTitleCloseButton">
+                <img src="public/images2/del.png"/></a>
+        </div>
+        <div class="int_dialogContent">
+            <form method="post" action="">
+                <textarea name="brief" id=""  placeholder="请输入你的简介……" class="inputIntro"></textarea>
+                <input type="submit" value=" " class="submitIntro">
+            </form>
+        </div>
+    </div>
+
+</div>
+<script type="text/javascript" src="public/js/jquery.js"></script>
+<script type="text/javascript" src="public/js/functions.js"></script>
+<script type="text/javascript" src="public/js/main.js"></script>
+<script type="text/javascript" src="public/js/album.js"></script>
+</body>
+</html>

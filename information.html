@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Fill Information</title>
+    <link rel="stylesheet" type="text/css" href="public/styles/reset.css">
+    <link rel="stylesheet" type="text/css" href="public/styles/information.css">
+    <style>
+    </style>
+</head>
+<body>
+    <div class="infoBox">
+        <div class="title">来介绍一下你自己吧</div>
+        <div class="info">
+            <form action="" method="post">
+                <!--选择头像-->
+                <div class="photo"><img src="public/images2/CC.png" id="logo" /></div>
+                <!--性别-->
+                <p class="sex">
+                    <label>性&nbsp;&nbsp;&nbsp;别&nbsp;&nbsp;&nbsp;:</label>
+                    <label for="secrecy"><input type="radio" name="sex" id="secrecy" value="3">保密</label>
+                    <label for="male"><input type="radio" name="sex" id="male" value="0">男</label>
+                    <label for="female"><input type="radio" name="sex" id="female" value="1">女</label>
+                </p>
+                <!--所在地-->
+                <p class="location">
+                    <label for="province">所&nbsp;在&nbsp;地&nbsp;:</label>
+                    <select name="location" id="province" onchange="changeCity()">
+                    </select>
+                    &nbsp;&nbsp;
+                    <select name="location" id="city">
+                    </select>
+                </p>
+                <!--生日-->
+                <p class="birth">
+                    <label>出生日期:</label>
+                    <select name="birthyear" id="birth_year">
+                    </select>年
+                    <select name="birthmonth" id="birth_month" onchange="changeDay()">
+                    </select>月
+                    <select name="birthday" id="birth_day">
+                    </select>日
+                </p>
+                <!--个性签名-->
+                <p class="introduce">
+                    <label for="intro">个性签名:</label><br>
+                    <textarea name="brief" id="intro"></textarea>
+                </p>
+                <!--邮箱-->
+                <p class="email">
+                    <label for="email">绑定邮箱:</label><br>
+                    <input type="text" name="mail" id="email">
+                </p>
+                <!--提交-->
+                <input type="button" name="send" class="send" id="submit" value="开启FODIA之旅">
+                <!--邮箱错误提示-->
+                <div class="mistakes" id="mistake"></div>
+            </form>
+        </div>
+    </div>
+    <!--上传头像弹出框-->
+    <div class="uploadPicBox">
+        <div class="upPicPicContent" id="upPicPicContent">
+           图片预览
+        </div>
+        <form method="post" action="">
+            <a href="#">
+                <input type="file" value="" id="choosePicContent" class="choosePicContent" title="选择图片" style="display: none;">
+                <label for="choosePicContent">
+                    <img src="public/images2/J.png"/>
+                </label>
+            </a>
+        </form>
+        <div class="savePicContent" title="确定"><img src="public/images2/yes.png"/></div>
+        <div class="closePicContent" title="关闭"><img src="public/images2/answer-del.png"/></div>
+    </div>
+    <!--遮罩-->
+    <div class="mask"></div>
+</body>
+<script type="text/javascript" src="public/js/jquery.js"></script>
+<script type="text/javascript" src="public/js/uploadifive.min.js"></script>
+<script type="text/javascript" src="public/js/functions.js"></script>
+<script type="text/javascript" src="public/js/infomation.js"></script>
+</html>

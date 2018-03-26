@@ -1,0 +1,179 @@
+.content  .moments .photoBox{
+    width: 100%;
+    min-height: 50px;
+}
+.content  .moments .photoBox .photoHead{
+    width:100%;
+    height: 50px;
+    background: white;
+    position: relative;
+}
+.content  .moments .photoBox .photoHead .photoTitle{
+    width: 65%;
+    height: 50px;
+    position: absolute;
+    left: 0;
+    font-size: 24px;
+    font-weight: 600;
+    /*font-family: 幼圆;*/
+    color: #4d5f77;
+    line-height: 50px;
+    padding-left: 2%;
+
+}
+.content  .moments .photoBox .photoHead .photoAdd{
+    width: 25%;
+    height: 50px;
+    position: absolute;
+    left:65%;
+    font-size: 24px;
+    line-height: 50px;
+
+}
+.content  .moments .photoBox .photoHead .photoAdd a{
+    display: block;
+    font-size: 24px;
+    /*font-family: 幼圆;*/
+    color: #4d5f77;
+}
+.content  .moments .photoBox .photoHead .photoAdd img{
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: 8px;
+    padding-right:5px;
+}
+.content  .moments .photoBox .photoHead .photoDelete{
+    width: 8%;
+    height: 50px;
+    line-height: 50px;
+    background: white;
+    position: absolute;
+    right: 0;
+}
+.content  .moments .photoBox .photoHead .photoDelete img{
+    height: 35px;
+    margin-top: 7px;
+}
+.content  .moments .photoBox .photoList{
+    width: 100%;
+    min-height: 20px;
+    padding: 15px 0 15px 0;
+    background:rgba(255,255,255,0.8);
+    /*position: relative;*/
+}
+.content  .moments .photoBox .photoList .wrapper{
+    width: 100%;
+    min-height: 550px;
+    position: relative;
+}
+.content  .moments .photoBox .photoList section{
+    width: 25%;
+    margin-left:3%;
+    min-height: 20px;
+    background: #eaeff3;
+    box-shadow: 10px 10px 10px rgba(77,95,119,1);
+    /*position: absolute;*/
+    float: left;
+    display: block;
+}
+/*.content  .moments .photoBox .photoList  .first{
+    left: 0;
+    top:0;
+}
+.content  .moments .photoBox .photoList .second{
+     position: absolute;
+     left: 33%;
+     top:0;
+ }
+.content  .moments .photoBox .photoList .third{
+    position: absolute;
+    left: 66%;
+    top:0;
+    display: none;
+}*/
+.content  .moments .photoBox .photoList section .delList{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    margin-left: 86%;
+    display: none;
+    z-index: 300;
+}
+.content  .moments .photoBox .photoList section .delList img{
+    width: 40px;
+    height: 40px;
+}
+.content  .moments .photoBox .photoList section .delList img:hover{
+    width: 50px;
+    height: 50px;
+}
+.content  .moments .photoBox .photoList section .photoCover{
+    width: 100%;
+    text-align: center;
+    margin-top: 15px;
+}
+.content  .moments .photoBox .photoList section .photoCover img{
+    width: 150px;
+    height: 150px;
+}
+.content  .moments .photoBox .photoList section .photoName{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: #4d5f77;
+    font-size: 24px;
+    overflow: hidden;
+}
+.addPhotoListBox{
+    width: 26%;
+    height: 150px;
+    left: 37%;
+    top: 300px;
+    position: fixed;
+    background: #4d5f77;
+    border-radius: 10px;
+    display: none;
+    z-index: 20;
+}
+.addPhotoListBox p{
+    display: block;
+    font-size: 24px;
+    color: white;
+    font-family: 幼圆;
+    position: absolute;
+    top: 6%;
+    left: 20px;
+}
+.addPhotoListBox .nameOfPhoto{
+    width: 88%;
+    border: none;
+    height: 40px;
+    border-radius: 10px;
+    position: absolute;
+    top: 45px;
+    left: 6%;
+    font-size: 20px;
+}
+.addPhotoListBox .submitName{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right:6%;
+    bottom: 10px;
+    border: none;
+    background:url("../images3/B.png") no-repeat center center;
+}
+.addPhotoListBox a{
+    display: block;
+    position: absolute;
+    left: 6%;
+    bottom: 10px;
+    width: 40px;
+    height: 40px;
+}
+.addPhotoListBox a img{
+    width: 40px;
+    height: 40px;
+}

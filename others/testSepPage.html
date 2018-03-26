@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>分页测试html</title>
+    <script src="js/jquery.js"></script>
+</head>
+<body>
+<button type="button" name="" onclick="getdata()">查看更多</button>
+  <div id="content">
+      <span>hhh</span>
+  </div>
+</body>
+<script>
+    var page = 1;
+    function getdata() {
+        $.post('testSepPage.php?page='+page, {a: 'aa'}, function (res, status) {
+            res=JSON.parse(res);
+            var div=document.getElementById('content');
+            div.innerHTML = div.innerHTML + "<span>"+res['data']['num']+"</span>";
+        });
+        page++;
+    }
+</script>
+</html>

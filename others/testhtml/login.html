@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="../styles/reset.css">
+    <link rel="stylesheet" type="text/css" href="../styles/login.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="inner">
+            <!--<h1>FODIA</h1>-->
+            <img src="../images/LOGO2.png" alt="">
+            <p class="sub_head">今日  值得铭记</p>
+        </div>
+        <div class="main-wrapper">
+            <div class="choose">
+                <ul>
+                    <li class="chosen_login"><a href="#">登录</a></li>
+                    <li class="chosen_register"><a href="#">注册</a></li>
+
+                </ul>
+            </div>
+            <div class="content">
+                <section>
+                <div class="login">
+                    <form class="login" action="../testlogin01.php" method="post">
+                        <!-- 用户名 -->
+                        <input type="text" class="text"   id='user' name="username" placeholder="用户名 / 邮箱">
+                        <!-- 密码 -->
+                        <input type="password" class="text" id='password'  name="password" placeholder="密码">
+
+                        <a id="forget_password2" class="forget_password">忘记密码？</a>
+
+                        <!--显示错误信息-->
+                        <div class="mistake"></div>
+                        <!-- 登录按钮 -->
+                        <input type="submit" name="submit" class="buttonLogin" id='login_button'  value="登录">
+                    </form>
+                </div>
+            </section>
+                <section>
+                    <div class="register">
+                        <form class="register" action="../testregister.php" method="post">
+                            <!-- 用户名 -->
+                            <input class="text" id='author' type="text" name="username" onblur="check_author_exist()" placeholder="用户名">
+                            <!-- 邮箱 -->
+                            <input class="text" id='e-mail' type="text" name="nickname" onblur="check_email_exist()" placeholder="昵称">
+                            <!-- 密码 -->
+                            <input class="text" id='passwords' type="password" name="password" placeholder="密码">
+
+                            <a id="forget_password1" class="forget_password">忘记密码？</a>
+
+                            <!--显示错误信息-->
+                            <div class="mistake"></div>
+                            <!-- 注册按钮 -->
+                            <input class="buttonRegister"  name="submit" id='register_button' type="submit" value="注册">
+                        </form>
+                    </div>
+                </section>
+
+            </div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="../js/jquery.js"></script>
+<!--<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>-->
+<script type="text/javascript" src="../js/login.js"></script>
+</html>

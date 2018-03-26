@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>test</title>
+</head>
+<body>
+    <input id="content" type="text">
+    <input type="button" id="button">
+</body>
+
+<script src="public/js/jquery-min.js"></script>
+<script src="public/js/functions.js"></script>
+<script>
+    var s = 'fda123 1';
+    var e = s.substring(s.lastIndexOf('\ ') + 1);
+    console.log(e)
+//    var userSelf;
+//    var userOther;
+//    $.post('fd.html' + getGet(), {c : 'Chat', a : 'dddd'}, function (res, status) {
+//        res = JSON.parse(res);
+//        if (0 === res.code) {
+//            userSelf = res.data.u1;
+//            userOther = res.data.u2;
+//            ws(userSelf, userOther);
+//        }
+//    });
+//    function ws() {
+//        var ws = new WebSocket('ws://120.24.214.209:1380');
+//        ws.onopen = function (event) {
+//            var obj = {username : userSelf.username, id: userSelf.id, type : 0};
+//            ws.send(JSON.stringify(obj));
+//        };
+//        ws.onmessage = function (p1) {
+//            console.log(p1.data);
+//        };
+//
+//        ws.onclose = function (p1) {
+//
+//        };
+//        var button = document.getElementById('button');
+//        button.onclick = sendData;
+//        function sendData() {
+//            e = this.previousElementSibling;
+//            var data = {fromid : userSelf.id, from : userSelf.username, toid : userOther.id, to : userOther.username, content : e.value, type : 1};
+//            ws.send(JSON.stringify(data))
+//        }
+//    }
+//    document.onkeydown = function (e) {
+//        var button = document.getElementById("button");
+//        if(e.keyCode === 13)
+//        {
+//            button.click();
+//            e.returnValue = false;
+//        }
+//    }
+</script>
+</html>

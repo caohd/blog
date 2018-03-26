@@ -1,0 +1,663 @@
+/*主要内容 好友动态*/
+.content{
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 80px;
+    width: 65%;
+    min-height:500px;
+    /*background:rgba(0,0,0,0.5);*/
+    z-index: 1;
+    margin-bottom: 50px;
+}
+.content .moments{
+    width: 90%;
+    min-height: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    padding-bottom: 20px;
+    z-index: 10;
+}
+
+
+/*评论的*/
+.passage_dialog .content{
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 50px;
+    width: 100%;
+    min-height:500px;
+    /*background:rgba(0,0,0,0.5);*/
+    z-index: 1;
+    margin-bottom: 50px;
+}
+.passage_dialog .content .moments{
+    width: 95%;
+    min-height: 20px;
+    display: block;
+    z-index: 10;
+    /*background: #000;*/
+}
+
+
+/*每个博文内容块*/
+.content .moments section{
+    width:100%;
+    display: block;
+    /*min-height: 50px;*/
+    margin-bottom:20px;
+    border: 1px solid transparent;
+    /*position: relative;*/
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius:10px;
+}
+/*头像*/
+.content .moments section .fri_pic{
+    width: 70px;
+    height: 70px;
+    position: absolute;
+}
+.content .moments section .fri_pic img{
+    width: 100%;
+    height: 100%;
+    border: 3px solid rgba(0,0,0,0.3);
+    -moz-border-radius: 40px;
+    -webkit-border-radius: 40px;
+    border-radius:40px;
+}
+.content .moments section .fri_pic img:hover{
+    border: solid 3px rgba(77,95,119,0.5);
+    box-shadow: 0px 0px 15px rgba(77,95,119,1);
+}
+
+/*主要部分*/
+.content .moments section .fri_main{
+    position: relative;
+    width: 88%;
+    margin-left: 12%;
+    min-height: 80px;
+    background:#ffffff;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px; 
+    border-radius:10px;
+    top: 20px;
+    padding-bottom: 10px;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.3);
+}
+
+/*评论的*/
+.passage_dialog .content .moments section .fri_main{
+    position: relative;
+    width: 88%;
+    min-height: 80px;
+    background:#ffffff;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius:10px;
+    top: 20px;
+    padding-bottom: 10px;
+    box-shadow:none;
+}
+
+
+.content .moments section .fri_name{
+    width: 15%;
+    height: 30px;
+    position: absolute;
+    padding-top: 15px;
+    left: 20px;
+
+}
+.content .moments section .fri_name a {
+    line-height: 20px;
+    color: #4d5f77;
+    font-size: 24px;
+    font-weight: 700;
+
+}
+/*关注*/
+.content .moments section .fri_concern{
+    width: 15%;
+    height: 30px;
+    line-height: 30px;
+    position: absolute;
+    margin-left:130px;
+    margin-top: 10px;
+    text-align: center;
+}
+.content .moments section .fri_concern a{
+    display: block;
+    width:100%;
+    height: 100%;
+    color: white;
+    font-size: 18px;
+    background: #4d5f77;
+    border-radius: 10px;
+}
+.content .moments section .fri_concern a:hover{
+    background: rgba(69,87,111,0.5);
+}
+/*发布时间*/
+.content .moments section .fri_time{
+    width: 25%;
+    height: 50px;
+    line-height: 50px;
+    position: absolute;
+    margin-left:350px;
+    color: #4d5f77;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+/*阅读量*/
+.content .moments section .fri_read{
+    width: 25%;
+    height: 50px;
+    margin-left:530px;
+    line-height: 50px;
+    color: #4d5f77;
+    font-size: 16px;
+    font-weight: 700;
+}
+/*阅读量*/
+.content .moments section .fri_read1{
+    width: 25%;
+    height: 50px;
+    margin-left:530px;
+    line-height: 50px;
+    color: #4d5f77;
+    font-size: 16px;
+    font-weight: 700;
+    opacity: 0;
+}
+
+/*发布内容*/
+.content .moments section .fri_content{
+    width: 75%;
+    height: 250px;
+    margin-left:8%;
+    margin-right: 5%;
+    padding: 2%;
+    overflow: hidden;
+}
+
+/*评论的*/
+.passage_dialog .content .moments section .fri_content{
+    width: 75%;
+    height: auto;
+    margin-left:8%;
+    margin-right: 5%;
+    padding: 2%;
+    /*overflow: hidden;*/
+}
+.content .moments section .fri_content span{
+     width: 100%;
+     height: 40px;
+     line-height: 40px;
+     font-size: 24px;
+     font-family: 微软雅黑;
+    color: #4d5f77;
+     display: block;
+     margin-bottom:15px;
+     overflow: hidden;
+ }
+.content .moments section .fri_content span b{
+    color:red;
+}
+.content .moments section .fri_content article{
+    font-size: 16px;
+    font-family: 微软雅黑;
+    text-indent: 2em;
+}
+.content .moments section .fri_content .photoTitle{
+    width: 100%;
+    min-height: 20px;
+    font-size: 16px;
+    font-family: 微软雅黑;
+    display: block;
+    margin-bottom:15px;
+    text-indent: 2em;
+    overflow: hidden;
+}
+.content .moments section .fri_content .photoContent{
+    width: 100%;
+    min-height: 20px;
+}
+.content .moments section .fri_content .photoContent img{
+    width: 30%;
+    height: 140px;
+    margin-bottom: 10px;
+}
+/*点赞 评论 转发列表*/
+.content .moments section .fri_list {
+    position: absolute;
+    display: block;
+    width: 10%;
+    height:200px;
+    right: 5px;
+    top: 70px;
+}
+.content .moments section .fri_list img{
+    width: 30px;
+}
+
+
+/*列表内容*/
+.content .moments section ul li{
+    float: none;
+    width: 100%;
+    text-align: center;
+}
+.content .moments section ul li a{
+    width: 100%;
+    text-align: center;
+    display: block;
+    height: 40px;
+}
+.content .moments section ul li a img{
+    width: 25px;
+}
+/*显示全文按钮*/
+.content .moments section .fri_contentAll{
+    /*position: absolute;*/
+    width: 100%;
+    height: 30px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    line-height: 30px;
+    text-align: center;
+}
+.content .moments section .fri_contentAll img{
+    height: 20px;
+}
+/*收起全文按钮*/
+.content .moments section .fri_contentAllHide{
+    width: 100%;
+    height: 30px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    line-height: 30px;
+    text-align: center;
+    display: none;
+}
+.content .moments section .fri_contentAllHide img{
+    height: 20px;
+}
+
+/*评论内容框*/
+.content .moments section .fri_comment{
+    width:80%;
+    min-height: 20px;
+    margin-left: auto;
+    margin-right:auto;
+    display: none;
+    position: relative;
+    padding-bottom: 30px;
+}
+/*列表*/
+.content .moments section .fri_comment .fri_List{
+    width:100%;
+    height: 60px;
+    border-top: 3px solid #4d5f77;
+}
+.content .moments section .fri_comment .fri_List ul li{
+    float: left;
+    display: block;
+    width: 33%;
+    height: 40px;
+    line-height: 40px;
+    margin-top: 20px;
+    border-right: 3px solid #4d5f77;
+    box-sizing: border-box;
+    text-align: center;
+}
+.content .moments section .fri_comment .fri_List ul li:last-child{
+    border-right: none;
+}
+.content .moments section .fri_comment .fri_List ul li a{
+    display: block;
+    width: 100%;
+    color: #4d5f77;
+    font-size: 18px;
+}
+.content .moments section .fri_comment .fri_List .close_comment{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 20px;
+    right:5px;
+}
+/*评论输入框*/
+.content .moments section .fri_comment .sendComment{
+    width: 100%;
+    height: 100px;
+    margin-top: 10px;
+    position: relative;
+}
+/*评论输入框*/
+.content .moments section .fri_comment .sendComment .inputComment{
+    width: 100%;
+    height: 100px;
+    border: 3px solid #4d5f77;
+    font-family:微软雅黑;
+    color: #4d5f77;
+    font-size: 20px;
+    word-wrap: break-word;
+    word-break: normal;
+
+}
+/*评论提交框*/
+.content .moments section .fri_comment .sendComment .submitComment{
+    width: 40px;
+    height: 40px;
+    border: none;
+    position: absolute;
+    bottom: 0;
+    right: 5px;
+    background:url("../images2/send.png") no-repeat center center;
+}
+/*评论列表*/
+.content .moments section .fri_comment .commentList{
+    /*position: relative;*/
+    width: 100%;
+    min-height: 50px;
+    margin-top: 20px;
+    padding-top: 30px;
+    border: 3px solid #4d5f77;
+
+}
+/*每条评论部分*/
+.fri_comment .commentList section{
+    width:90%;
+    display: block;
+    min-height: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 10px;
+    position: relative;
+    background:#eaeff3;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius:0;
+}
+/*评论时间*/
+.fri_comment .commentList section .comment_time{
+    width: 25%;
+    height: 30px;
+    /*position: absolute;*/
+    margin-left: 72%;
+    margin-top:5px;
+    color: #4d5f77;
+    font-size: 14px;
+    line-height: 30px;
+}
+/*评论人头像*/
+.fri_comment .commentList section .comment_pic{
+    width: 60px;
+    height: 60px;
+    /*position: absolute;*/
+    margin-left: 10px;
+    margin-top:5px;
+}
+.fri_comment .commentList section .comment_pic img{
+    width:60px;
+    height:60px;
+    -moz-border-radius: 35px;
+    -webkit-border-radius: 35px;
+    border-radius:35px;
+}
+/*评论人昵称*/
+.fri_comment .commentList section .comment_name{
+    width: 60px;
+    height: 30px;
+    line-height: 30px;
+    /*position: absolute;*/
+    margin-left: 10px;
+    margin-top:5px;
+    color: #4d5f77;
+    font-size: 13px;
+    font-weight: 700;
+    text-align:center ;
+}
+/*评论内容*/
+.fri_comment .commentList section .comment_word{
+    width: 370px;
+    height: 55px;
+    float: left;
+    line-height: 20px;
+    position: absolute;
+    left: 80px;
+    top:40px;
+    color: #4d5f77;
+    font-size: 16px;
+    background:#ffffff;
+    padding: 5px;
+    overflow: hidden;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius:5px;
+}
+/*回复按钮*/
+.fri_comment .commentList section .comment_btn{
+    width: 60px;
+    height: 20px;
+    float: left;
+    line-height: 20px;
+    position: absolute;
+    left: 170px;
+    top:110px;
+    padding: 5px;
+}
+.fri_comment .commentList section .comment_btn a{
+    font-size: 18px;
+    font-weight: 600;
+    color: #4d5f77;
+}
+/*评论点赞删除列表*/
+.fri_comment .commentList section .comment_list{
+    width:50%;
+    height: 20px;
+    position: absolute;
+    right: 15px;
+    top:115px;
+}
+.fri_comment .commentList section .comment_list img{
+    height: 20px;
+}
+.fri_comment .commentList section .comment_list ul li{
+    float: left;
+    display: block;
+    width: 33%;
+    height: 20px;
+    color: #4d5f77;
+    line-height: 20px;
+    text-align: center;
+}
+.fri_comment .commentList section .comment_list ul li a{
+    display: block;
+    width: 100%;
+    line-height: 20px;
+    height: 20px;
+    font-size: 14px;
+    color: #4d5f77;
+}
+/*回复列表框*/
+.fri_comment .commentList section .comment_reply{
+    margin-top: 15px;
+    /*background:gray;*/
+    border-top: 3px solid #4d5f77;
+    width:100%;
+    min-height: 10px;
+    /*padding-bottom: 10px;*/
+}
+/*每条回复*/
+.fri_comment .commentList section .comment_reply section{
+    width:100%;
+    min-height: 10px;
+    /*padding-bottom: 10px;*/
+    position: relative;
+}
+/*回复时间*/
+.fri_comment .commentList section .comment_reply .reply_time{
+    width: 25%;
+    height: 30px;
+    /*position: absolute;*/
+    margin-left: 72%;
+    margin-top:5px;
+    color: #4d5f77;
+    font-size: 14px;
+    line-height: 30px;
+}
+/*回复人昵称*/
+.fri_comment .commentList section .comment_reply .reply_name {
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    /*position: absolute;*/
+    margin-left: 5px;
+    /*margin-top:5px;*/
+    color: #4d5f77;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    overflow: hidden;
+}
+/*回复的内容*/
+.fri_comment .commentList section .comment_reply .reply_word{
+    width: 345px;
+    height: 20px;
+    float: left;
+    line-height: 25px;
+    position: absolute;
+    left: 105px;
+    top:35px;
+    color: #4d5f77;
+    font-size: 14px;
+    background:#ffffff;
+    padding: 5px;
+    overflow: hidden;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius:5px;
+}
+/*回复按钮*/
+.fri_comment .commentList section .comment_reply .reply_btn{
+    width: 35px;
+    height: 20px;
+    float: left;
+    line-height: 20px;
+    position: absolute;
+    right: 5px;
+    top:35px;
+    background:#ffffff;
+    padding: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius:5px;
+}
+.fri_comment .commentList section .comment_reply .reply_btn a{
+    font-size: 16px;
+    font-weight: 500;
+    color: #4d5f77;
+}
+
+
+
+/*回复弹出框*/
+.inputReply{
+    width: 40%;
+    height: 180px;
+    position: fixed;
+    top: 200px;
+    left: 30%;
+    z-index: 1000;
+    background: #4d5f77;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius:10px;
+    display: none;
+}
+
+/*评论输入框*/
+.inputReply .inputReplyComment{
+    width: 80%;
+    height: 150px;
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    padding: 5px;
+    border: 1px solid #4d5f77;
+    font-family:微软雅黑;
+    color: #4d5f77;
+    font-size: 20px;
+    word-wrap: break-word;
+    word-break: normal;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius:10px;
+}
+/*评论提交框*/
+.inputReply .submitReplyComment{
+    width: 40px;
+    height: 40px;
+    border: none;
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    background:url("../images2/answer-send.png") no-repeat center center;
+}
+.inputReply .closeReplyComment{
+    width: 40px;
+    height: 40px;
+    border: none;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+}
+.inputReply .closeReplyComment img{
+    width: 40px;
+    height: 40px;
+}
+
+
+/*转发提示框*/
+.tip_dialog{
+    width: 26%;
+    height: 120px;
+    top: 220px;
+    left: 37%;
+    position:fixed;
+    z-index: 9000;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    border-radius:15px;
+    visibility: hidden;
+    background: rgba(69,87,111,0.8);
+    text-align: center;
+    line-height: 120px;
+    font-family: 幼圆;
+    font-size: 24px;
+    color: white;
+}
+
+/*删除提示框*/
+.delete_dialog{
+    width: 26%;
+    height: 120px;
+    top: 220px;
+    left: 37%;
+    position:fixed;
+    z-index: 8000;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    border-radius:15px;
+    visibility: hidden;
+    background: rgba(69,87,111,0.8);
+    text-align: center;
+    line-height: 120px;
+    font-family: 幼圆;
+    font-size: 24px;
+    color: white;
+}

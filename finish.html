@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>完成验证</title>
+</head>
+<body>
+    <div id="info"></div>
+</body>
+<script src="public/js/jquery.js" type="text/javascript"></script>
+<script src="public/js/functions.js"></script>
+<script type="application/javascript">
+    var info = document.getElementById('info');
+    $.post('buxiangxiele.html' + getGet(), {c : 'User', a : 'finish'}, function (res, status) {
+        res = JSON.parse(res);
+        if (0 === res.code) {
+            info.innerHTML = '验证成功<a href="index.html">点击跳转</a>'
+        } else {
+            info.innerHTML = '验证失败<a href="index.html">点击跳转</a>';
+        }
+    });
+</script>
+</html>
